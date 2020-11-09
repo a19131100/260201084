@@ -7,3 +7,11 @@ for i in range(n):
   factor *= i
 
 print(factor)
+
+trailing_zeros=0
+for z in reversed(str(factor)):
+  if z!= "0":
+    break
+  trailing_zeros += 1
+
+print("Number of trailing zeros are: ", trailing_zeros)
