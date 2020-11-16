@@ -1,5 +1,5 @@
 n = int(input("How many numbers?: "))
-count=0
+
 even_count=0
 for i in range(n):
   integer_=int(input("Please enter an integer: "))
