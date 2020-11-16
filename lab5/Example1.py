@@ -1,5 +1,5 @@
 integer_= int(input("Please enter an integer: "))
-while integer_<= 0:
+while integer_ < 0:
   integer_= int(input("Please enter a valid integer: "))
 
 while integer_>10:
