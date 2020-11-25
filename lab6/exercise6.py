@@ -12,5 +12,7 @@ sum_of_main=0
 for i in range(length):
   sum_of_main += matrix[i][i]
 
-print(matrix)
+for i in matrix:
+  print(i)
+
 print("The sum of the main diagonal is: ", sum_of_main)

@@ -5,5 +5,6 @@ for row in range(length):
   matrix.append( [0]* length)
   matrix[row][row]= 1
 
-print(matrix)  
+for i in matrix:
+  print(i)  
 
