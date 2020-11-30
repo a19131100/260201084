@@ -1,19 +1,10 @@
-name_= input("Please enter your name: ")
-name_=name_.upper()
+f=open("members.txt", "r")
+line = f.readline()
+names_dictionary={}
 
-for letter in name_:
-  print(letter)
+while line != "":
+  indx= line.index("@")
+  name_tag=email[0:indx]
+  names_dictionary[name_tag]= line
 
-stringconc= " "
-anystr = input("Please enter any string ('quit' to quit): ")
-
-while anystr!= "quit" :
-  
-  stringconc = stringconc + anystr
-  
-  anystr = input("Please enter any string ('quit' to quit): ")
-  
-  
-print(stringconc)
-  
-  
+print(names_dictionary)
