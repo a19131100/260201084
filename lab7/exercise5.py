@@ -2,7 +2,7 @@ user_password = "abc123"
 counter = 0
 while True:
   checking_password = input("Please enter the password:")
-  if checking_password == user_password and counter<2:
+  if checking_password == user_password and counter<=2:
     print("You have successfully logged in")
     break
   elif checking_password != user_password and counter<2:
