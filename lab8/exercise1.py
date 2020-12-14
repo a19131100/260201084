@@ -5,5 +5,5 @@ def sum_function(a_list):
 
   return sum_of_elements**2
 
-
-print(sum_function([12, -7, 5, -89.4, 3, 27, 56, 57.3]))
+a_list = [12, -7, 5, -89.4, 3, 27, 56, 57.3]
+print(sum_function(a_list))
