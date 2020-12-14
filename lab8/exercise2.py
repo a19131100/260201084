@@ -1,10 +1,10 @@
 def is_prime(number1):
   if number1>1:
-    for i in range(2,number1):
-      if number1%2 == 0:
-        continue
-      else:
-        return i
+    for i in range(2,number1//2):
+      if number1% i == 0:
+        return False
+      
+  return True
 
 def print_primes_between(int1, int2):
   for x in range(int1, int2):
