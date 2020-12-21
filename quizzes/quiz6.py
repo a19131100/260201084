@@ -1,10 +1,11 @@
-f=open("members.txt", "r")
-line = f.readline()
-names_dictionary={}
 
-while line != "":
-  indx= line.index("@")
-  name_tag=email[0:indx]
-  names_dictionary[name_tag]= line
-
-print(names_dictionary)
+my_dict ={"java":100, "python":112, "c":11}
+ 
+# list out keys and values separately
+key_list = list(my_dict.keys())
+val_list = list(my_dict.values())
+ 
+# print key with val 100
+position = val_list.index(100)
+print(key_list[position])
+print(sorted(val_list)[1])
