@@ -1,2 +1,2 @@
 language = "python3"
-run = "python lab9/exercise4.py"
+run = "python quizzes/ceng113_qz9_260201084.py"
