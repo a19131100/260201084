@@ -1,11 +1,14 @@
+str1 = input("Enter the first letter")
+str2 = input("Enter the second letter")
 def isAnagram(str1, str2):
-  if len(str1) == 0:
-    return 0
+  count = 0
+  for i in str1:
+    for j in str2:
+      if i == j:
+        count += 1
+
+  if count== len(str1):
+    print("They are anagrams")
 
   else:
-    counter = 0
-    if str1[-1] == str2[0]:
-      counter 1
-    if counter == len(str1)//2:
-      print("They are anagram")
-  return counter + isAnagram(str1[:-1], str2[1:])
+    print("They are not anagrams")
