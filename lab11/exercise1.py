@@ -26,13 +26,13 @@ class Cylinder:
     return math.pi * 2 * self.radius * self.height
 
   def calc_area(self):
-    return 2* base_area(self) + surface_area(self)
+    return 2 * self.base_area() + self.surface_area()
 
   def calc_volume(self):
-    return base_area(self) * surface_area(self)
+    return self.base_area() * self.height
 
 
-a = Cylinder(3,5)
+a = Cylinder(radius=3, height=5)
 
-print(a.calc_area())
-print(a.calc_volume())
+print("Area:", a.calc_area())
+print("Volume: ", a.calc_volume())
