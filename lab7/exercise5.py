@@ -1,15 +1,26 @@
-user_password = "abc123"
-counter = 0
-while True:
-  checking_password = input("Please enter the password:")
-  if checking_password == user_password and counter<=2:
-    print("You have successfully logged in")
-    break
-  elif checking_password != user_password and counter<2:
-    print("Sorry, the password is wrong")
-    counter += 1
-    continue
-  elif checking_password != user_password and counter == 2:
-    print("Sorry, the password is wrong")
-    print("You have been denied access")
-    break
+password = input("Please enter the password: ")
+upper_count = 0
+lower_count = 0
+number_count = 0
+if len(password)<8:
+  print("Password is not valid")
+
+else:
+  for element in password:
+    if element.isdigit():
+      number_count += 1
+
+    else:
+      if element.isalpha():
+        if element.isupper():
+          upper_count += 1
+
+        elif element.islower():
+          lower_count += 1
+
+  if (upper_count > 0) and (lower_count>0) and (number_count>0):
+    print("password is valid")
+
+  else:
+    print("password is not valid")
+
